@@ -1,0 +1,45 @@
+<div id="articleWrapper" *ngIf="!articleService.dataLoading">
+  <section class="dark">
+    <div class="container py-4">
+      <article class="postcard dark blue">
+        <a class="postcard__img_link" href="#">
+          <img
+            class="postcard__img"
+            src="https://picsum.photos/1000/1000"
+            alt="Image Title"
+          />
+        </a>
+        <div class="postcard__text">
+          <h1 class="postcard__title red"
+          id="#pageHeaderTitle">
+            <strong>{{ article.title }}</strong>
+          </h1>
+          <div class="postcard__subtitle small">
+            <time>
+              <i class="fas fa-calendar-alt mr-2"></i
+              >{{ article.publishDate | date: "dd.MM.yyyy" }}
+            </time>
+          </div>
+          <div class="postcard__bar"></div>
+          <div class="postcard__preview-txt">
+            <div [innerHTML]="article.contentMain"></div>
+          </div>
+          <ul class="postcard__tagbox">
+            <li class="tag__item">
+              <i class="fas fa-tag mr-2"></i>{{ category.name }}
+            </li>
+            <span class="mx-2">
+              <small><i class="fas fa-eye"></i>{{ article.viewCount }}</small>
+            </span>
+
+            <span class="mx-2">
+              <small
+                ><i class="fas fa-comment"></i>{{ article.commentCount }}</small
+              >
+            </span>
+          </ul>
+        </div>
+      </article>
+    </div>
+  </section>
+</div>
