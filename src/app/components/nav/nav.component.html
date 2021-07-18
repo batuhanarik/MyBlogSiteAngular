@@ -22,11 +22,16 @@
                   <div class="circle"></div>
                 </li>
               </ul>
+              <div class="d-flex justify-content-center h-100">
+                <div class="searchbar">
+                  <input #searchText
+                  class="search_input" type="text" name="" placeholder="Arama...">
+                  <a (click)="search(searchText.value)" class="search_icon"><i class="fas fa-search"></i></a>
+                </div>
+              </div>
             </div>
         </nav>
       </div>
     </div>
   </div>
 </div>
-
-<router-outlet></router-outlet>

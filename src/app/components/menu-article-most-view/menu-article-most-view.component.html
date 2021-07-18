@@ -1,4 +1,3 @@
-
 <div class="px-3">
   <div
     class=
@@ -7,10 +6,10 @@
       justify-content-end"
   >
     <div class="tm-bg-dark content-pad">
-      <h2 class="mb-4 text-info">Kategoriler</h2>
+      <h2 class="mb-4 text-info">En Çok Okunanlar</h2>
 
       <div
-        *ngIf="categories.length === 0"
+        *ngIf="articles.length === 0"
         class="d-flex justify-content-center text-primary"
       >
         <div class="spinner-border" role="status">
@@ -18,13 +17,13 @@
         </div>
       </div>
 
-      <h3 *ngFor="let category of categories">
+      <h3 *ngFor="let article of articles">
         <strong>
           <a
-            [routerLink]="['/kategori', category.name | urlformat, category.id]"
-            class="btn btn-link align-items-center text-white-50 text-decoration-none"
+            [routerLink]="['/makale', article.title | urlformat, article.id]"
+            class="btn btn-link align-items-center text-white-50 text-decoration-none text-left"
             ><i class="fa fa-arrow-circle-right text-white-50"></i>
-            {{ category.name }}
+            {{ article.title }}
           </a>
         </strong>
       </h3>

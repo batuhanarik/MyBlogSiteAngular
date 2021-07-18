@@ -37,4 +37,8 @@ export class NavComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  search(searchText){
+    if(searchText=="" || searchText==null || searchText==undefined) return false;
+    this.router.navigateByUrl(`/arama/sayfa/1?s=${searchText}`);
+  }
 }
