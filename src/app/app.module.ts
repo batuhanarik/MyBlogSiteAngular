@@ -8,7 +8,7 @@ import { AppComponent } from './app.component';
 
 import { AdminLayoutComponent } from './components/layouts/admin-layout/admin-layout.component';
 import { AdminNavComponent } from './components/admin-nav/admin-nav.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { BrowserAnimationsModule, NoopAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -21,6 +21,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     AppRoutingModule,
     HttpClientModule,
     MainModule,
+    NoopAnimationsModule,
     // BrowserAnimationsModule
   ],
   providers: [],
