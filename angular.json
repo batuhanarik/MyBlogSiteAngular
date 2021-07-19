@@ -29,14 +29,14 @@
               "src/styles.css",
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "node_modules/@fortawesome/fontawesome-free/css/all.css",
-              "node_modules/templatemo_560_astro_motion/css/slick.css",
-              "node_modules/templatemo_560_astro_motion/css/templatemo-style.css"
+              "src/app/templatemo_560_astro_motion/css/slick.css",
+              "src/app/templatemo_560_astro_motion/css/templatemo-style.css"
             ],
             "scripts": [
               "node_modules/jquery/dist/jquery.min.js",
               "node_modules/bootstrap/dist/js/bootstrap.min.js",
-              "node_modules/templatemo_560_astro_motion/js/slick.js",
-              "node_modules/templatemo_560_astro_motion/js/templatemo-script.js"
+              "src/app/templatemo_560_astro_motion/js/slick.js",
+              "src/app/templatemo_560_astro_motion/js/templatemo-script.js"
             ]
           },
           "configurations": {
