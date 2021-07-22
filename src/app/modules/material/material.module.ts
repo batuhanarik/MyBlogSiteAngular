@@ -4,7 +4,8 @@ import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {ReactiveFormsModule,FormsModule} from '@angular/forms';
 import {MatInputModule} from '@angular/material/input';
 import {MatButtonModule} from '@angular/material/button';
-
+import {MatTableModule} from '@angular/material/table';
+import {MatPaginatorModule} from '@angular/material/paginator';
 
 @NgModule({
   declarations: [],
@@ -14,7 +15,9 @@ import {MatButtonModule} from '@angular/material/button';
     ReactiveFormsModule,
     FormsModule,
     MatInputModule,
-    MatButtonModule
+    MatButtonModule,
+    MatTableModule,
+    MatPaginatorModule
   ],
   exports: [
     CommonModule,
@@ -22,7 +25,9 @@ import {MatButtonModule} from '@angular/material/button';
     ReactiveFormsModule,
     FormsModule,
     MatInputModule,
-    MatButtonModule
+    MatButtonModule,
+    MatTableModule,
+    MatPaginatorModule
   ]
 })
 export class MaterialModule { }

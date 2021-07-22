@@ -15,6 +15,10 @@ export class ArticleService {
 
   constructor(private httpClient: HttpClient) {}
 
+  getArticlesWithoutPg(){
+    return this.httpClient.get<Article[]>(this.apiUrl);
+  }
+
   getArticles(page : number, pageSize: number){
     let api=`${this.apiUrl}/${page}/${pageSize}`;
 

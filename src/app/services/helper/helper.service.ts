@@ -5,11 +5,11 @@ import { Contact } from 'src/app/models/contact/contact';
 @Injectable({
   providedIn: 'root'
 })
-export class HelpeService {
+export class HelperService {
 
   constructor(private httpClient: HttpClient) { }
 
-  apiUrl: string="https://localhost:44395/api/helper";
+  private apiUrl: string="https://localhost:44395/api/helper";
 
   sendContactEmail(contact:Contact){
 
