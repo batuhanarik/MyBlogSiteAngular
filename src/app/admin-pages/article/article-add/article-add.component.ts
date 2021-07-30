@@ -87,7 +87,6 @@ export class ArticleAddComponent implements OnInit {
 
       this.articleForm.controls.picture.setValue(this.picture);
     });
-
   }
 
 }

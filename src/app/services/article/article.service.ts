@@ -90,7 +90,13 @@ export class ArticleService {
 
   addArticle(article:Article) {
     return this.httpClient.post<any>(this.apiUrl,article);
+  }
 
+  updateArticle(id: number, article:Article){
+    return this.httpClient.put<any>(`${this.apiUrl}/${id}`,article);
+  }
+  deleteArticle(id: number){
+    return this.httpClient.delete<any>(`${this.apiUrl}/${id}`);
   }
 
 }
