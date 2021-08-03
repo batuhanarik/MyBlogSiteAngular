@@ -11,7 +11,7 @@ import { AdminHomeComponent } from './admin-home/admin-home.component';
 import { AdminArticleComponent } from './article/article/article.component';
 import { ArticleAddComponent } from './article/article-add/article-add.component';
 import { ArticleUpdateComponent } from './article/article-update/article-update.component';
-import { ArticleListComponent } from './article/article-list/article-list.component';
+import { ArticleListComponent } from './article/article/article-list/article-list.component';
 
 @NgModule({
   declarations: [

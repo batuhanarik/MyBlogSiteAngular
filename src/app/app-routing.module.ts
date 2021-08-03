@@ -14,10 +14,11 @@ import { ArchiveComponent } from './pages/archive/archive.component';
 
 import { AdminHomeComponent } from './admin-pages/admin-home/admin-home.component';
 import { AdminArticleComponent } from './admin-pages/article/article/article.component';
-import { ArticleListComponent } from './admin-pages/article/article-list/article-list.component';
+import { ArticleListComponent } from './admin-pages/article/article/article-list/article-list.component';
 import { ArticleAddComponent } from './admin-pages/article/article-add/article-add.component';
 import { ArticleUpdateComponent } from './admin-pages/article/article-update/article-update.component';
 import { AdminLoginComponent } from './pages/admin-login/admin-login.component';
+import { AuthGuardService } from './services/auth-guard/auth-guard.service';
 
 
 
@@ -75,6 +76,7 @@ const routes: Routes = [
   {
     path:'admin',
     component:AdminLayoutComponent,
+    canActivate:[AuthGuardService],
     children:[
       {
         path : "",
