@@ -61,7 +61,6 @@
 </ng-template>
 
 
-  <section class="wrapper">
     <div class="container">
       <div class="row">
         <ng-template
@@ -72,18 +71,18 @@
 
           <div
             class="card text-white card-has-bg click-col"
-              style="background-image:url('https://source.unsplash.com/600x900/?tech,street');">
+              style="background-image:url('../../assets/images/articleEmpty.PNG');">
             <img
               class="card-img d-none"
-              [src]="picture || defaultArticle "/>
+              [src]="picture || defaultArticle"/>
 
             <div class="card-img-overlay d-flex flex-column"
             [routerLink]="['/makale',title | urlformat,id]">
               <div class="card-body">
                 <small class="card-meta mb-2">{{categoryName}}</small>
-                <h4 class="card-title mt-0">
+                <h2 class="card-title mt-0">
                   <a class="text-dark">{{title}}</a>
-                </h4>
+                </h2>
                 <p class="card-text">{{contentSummary}}</p>
                 <hr>
                 <small class="mx-2"><i class="far fa-clock"></i>{{publishDate | date:'dd.MM.yyyy'}}</small>
@@ -105,27 +104,21 @@
                     alt="Generic placeholder image"
                     style="max-width: 50px"/>
                   <div class="media-body">
-                    <h6 class="my-0 text-white d-block">Batuhan Arık</h6>
+                    <h5 class="my-0 text-white d-block">Batuhan Arık</h5>
                   </div>
                 </div>
               </div>
             </div>
-
         </div>
       </ng-template>
       </div>
-
     </div>
-  </section>
 
-
-  <div class="pagination">
-    <div class="col-md-12">
     <pagination-controls
+    *ngIf="totalCount > pageSize"
      responsive="true"(pageChange)="pageChanged($event)" previousLabel="Geri" nextLabel="İleri">
     </pagination-controls>
-  </div>
-  </div>
+
 
 
 

@@ -2,10 +2,10 @@
   <section class="dark">
     <div class="container py-4">
       <article class="postcard dark blue">
-        <a class="postcard__img_link" href="#">
+        <a class="postcard__img_link">
           <img
             class="postcard__img"
-            src="https://picsum.photos/1000/1000"
+            [src]="article.picture || defaultArticle"
             alt="Image Title"
           />
         </a>

@@ -11,7 +11,7 @@ body {
 .pagination{
   flex-direction: row;
   display: flex;
-  float: end;
+  float: right;
 }
 
 .card {

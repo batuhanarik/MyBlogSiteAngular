@@ -13,7 +13,7 @@ export class ArticleComponent implements OnInit {
 
   article : Article;
   category : Category;
-
+  defaultArticle : string = "assets/images/articleEmpty.PNG";
 
 
   constructor(public articleService: ArticleService,private activatedRoute: ActivatedRoute) { }
