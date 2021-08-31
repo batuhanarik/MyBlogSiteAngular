@@ -6,7 +6,8 @@ import { Category } from 'src/app/models/category/category';
 import { MyvalidationService } from 'src/app/services/myValidation/myvalidation.service';
 import { Router } from '@angular/router';
 import * as DeCoupleDocument from '@ckeditor/ckeditor5-build-decoupled-document';
-import Base64UploadAdapter from '@ckeditor/ckeditor5-upload/src/adapters/base64uploadadapter';
+import CKFinder from '@ckeditor/ckeditor5-ckfinder/src/ckfinder';
+
 @Component({
   selector: 'app-article-add',
   templateUrl: './article-add.component.html',
@@ -20,6 +21,7 @@ export class ArticleAddComponent implements OnInit {
         editor.ui.getEditableElement()
     );
 }
+
 
 
 

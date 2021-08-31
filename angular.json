@@ -30,13 +30,15 @@
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "node_modules/@fortawesome/fontawesome-free/css/all.css",
               "src/app/templatemo_560_astro_motion/css/slick.css",
-              "src/app/templatemo_560_astro_motion/css/templatemo-style.css"
+              "src/app/templatemo_560_astro_motion/css/templatemo-style.css",
+              "src/app/assets/about/css/styles.css"
             ],
             "scripts": [
               "node_modules/jquery/dist/jquery.min.js",
               "node_modules/bootstrap/dist/js/bootstrap.min.js",
               "src/app/templatemo_560_astro_motion/js/slick.js",
-              "src/app/templatemo_560_astro_motion/js/templatemo-script.js"
+              "src/app/templatemo_560_astro_motion/js/templatemo-script.js",
+              "src/app/assets/about/js/scripts.js"
             ]
           },
           "configurations": {
